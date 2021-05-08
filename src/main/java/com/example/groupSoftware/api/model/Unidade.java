@@ -18,9 +18,5 @@ public class Unidade{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@OneToOne
-	@JoinColumn(name = "morador_id")
-	private Morador morador;
-	
 	
 }

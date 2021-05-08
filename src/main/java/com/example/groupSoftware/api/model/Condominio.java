@@ -1,11 +1,10 @@
 package com.example.groupSoftware.api.model;
 
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.Data;
 
@@ -18,7 +17,7 @@ public class Condominio {
 	
 	private String endereco;
 	
-	@ManyToOne
+	@OneToMany
 	@JoinColumn(name = "unidade_id")
 	private List<Unidade> unidade;
 	
