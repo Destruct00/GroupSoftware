@@ -1,0 +1,9 @@
+Projeto Inicialmente feito em POSTGRESQL, porém para alterar para MYSQL é coisa básica, apenas trocar os valores no Application.properties, e Fazer a inserção de depend~encia do MYSQL no POM.
+Irei mandar Inicialmente com todas as funcionalidades já pré configuradas, como get e post, (listar e inserir) no banco.
+A anotação DATA presente em cada entity representa os @GetId, @SetId , por exemplo.
+O projeto está configurado como UPDATE, portanto caso for testar, em POSTGRESQL ou em MYSQL, é necessário apenas criar o banco de dados com o nome presente em  Application.properties,
+O SISTEMA SE RESPONSABILIZARÁ por criar as entity e os demais campos.
+Já é possível consultar os get e usar o set, em programas como o POSTMAN, o caminho necessário será: >
+. http://localhost:9098/unidade
+. http://localhost:9098/morador
+. http://localhost:9098/condominio
