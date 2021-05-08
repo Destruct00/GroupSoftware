@@ -1,5 +1,7 @@
 package com.example.groupSoftware.api.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -18,6 +20,6 @@ public class Condominio {
 	
 	@ManyToOne
 	@JoinColumn(name = "unidade_id")
-	private Unidade unidade;
+	private List<Unidade> unidade;
 	
 }
